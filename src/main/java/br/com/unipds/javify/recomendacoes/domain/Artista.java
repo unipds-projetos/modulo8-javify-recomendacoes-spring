@@ -1,8 +1,12 @@
 package br.com.unipds.javify.recomendacoes.domain;
 
+import org.springframework.data.neo4j.core.schema.Id;
+import org.springframework.data.neo4j.core.schema.Node;
+
+@Node
 public record Artista (
 
-        String id,
+        @Id String id,
 
         String nome
 
